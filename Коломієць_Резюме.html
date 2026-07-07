@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Коломієць Роман — Designer · UX/UI · Резюме</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --olive:#3E4637; --olive-dark:#2E3429; --brass:#8C6F2F; --brass-bright:#B08D3A;
+    --sand:#EFEBDD; --paper:#FBFAF6; --ink:#24281F; --muted:#6B7060; --line:#D8D3C2;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  body{ font-family:'Source Sans 3', 'Segoe UI', sans-serif; font-size:15px; line-height:1.55; color:var(--ink); background:var(--sand); }
+  .page{ max-width:960px; margin:24px auto; background:var(--paper); box-shadow:0 8px 40px rgba(36,40,31,.18); }
+
+  /* ── Header ── */
+  header{ background:var(--olive-dark); color:#fff; padding:44px 48px 36px; position:relative; overflow:hidden; }
+  header::after{ content:"UA · 2026"; position:absolute; right:-14px; top:18px; font-family:'Oswald'; font-size:64px; font-weight:700; color:rgba(176,141,58,.12); letter-spacing:4px; transform:rotate(-4deg); }
+  h1{ font-family:'Oswald', sans-serif; font-size:42px; font-weight:700; letter-spacing:2.5px; text-transform:uppercase; line-height:1.1; }
+  h1 .patronymic{ color:var(--brass-bright); }
+  .role{ margin-top:10px; font-size:17px; color:#D8DACF; letter-spacing:.5px; }
+  .target{ margin-top:4px; font-size:14px; font-style:italic; color:#A9AE9D; }
+  .contacts{ margin-top:22px; display:flex; flex-wrap:wrap; gap:10px 26px; font-size:14px; }
+  .contacts span{ display:inline-flex; align-items:center; gap:8px; color:#E8E6DB; }
+  .contacts b{ color:var(--brass-bright); font-weight:700; }
+
+  /* ── Stats strip ── */
+  .stats{ display:grid; grid-template-columns:repeat(4,1fr); background:var(--olive); }
+  .stat{ padding:18px 12px; text-align:center; border-right:1px solid rgba(255,255,255,.12); }
+  .stat:last-child{ border-right:none; }
+  .stat .n{ font-family:'Oswald'; font-size:26px; font-weight:600; color:#fff; letter-spacing:1px; }
+  .stat .l{ font-size:12px; color:#C9CDBF; margin-top:2px; }
+
+  /* ── Layout ── */
+  .body{ display:grid; grid-template-columns:300px 1fr; }
+  aside{ background:var(--sand); padding:30px 26px; border-right:1px solid var(--line); }
+  main{ padding:30px 40px 40px 36px; }
+
+  h2{ font-family:'Oswald'; font-size:16px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--olive); margin:26px 0 10px; padding-bottom:6px; border-bottom:2px solid var(--brass); }
+  h2:first-child{ margin-top:0; }
+  main h2{ border-bottom:none; padding-left:14px; position:relative; }
+  main h2::before{ content:""; position:absolute; left:0; top:2px; bottom:2px; width:5px; background:var(--brass); }
+
+  aside .item{ margin-bottom:12px; }
+  aside .item b{ display:block; font-size:13.5px; color:var(--olive); }
+  aside .item span{ font-size:13.5px; color:var(--ink); }
+
+  /* ── Experience ── */
+  .job{ margin-bottom:22px; padding-bottom:18px; border-bottom:1px dashed var(--line); }
+  .job:last-of-type{ border-bottom:none; }
+  .job h3{ font-size:16.5px; font-weight:700; color:var(--ink); line-height:1.35; }
+  .job .meta{ margin:3px 0 6px; font-size:13.5px; }
+  .job .meta .org{ color:var(--brass); font-weight:700; }
+  .job .meta .rest{ color:var(--muted); }
+  .job .lede{ font-style:italic; color:var(--muted); font-size:13.5px; margin-bottom:8px; }
+  .job ul{ list-style:none; }
+  .job li{ position:relative; padding-left:18px; margin-bottom:4px; font-size:14px; }
+  .job li::before{ content:"▸"; position:absolute; left:0; color:var(--brass); }
+
+  /* ── Certificates ── */
+  .certgrid{ display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:6px; }
+  .cert{ background:var(--sand); border:1px solid var(--line); border-radius:6px; padding:12px 14px; }
+  .cert b{ display:block; font-size:13px; color:var(--brass); text-transform:uppercase; letter-spacing:.6px; margin-bottom:4px; }
+  .cert p{ font-size:13px; color:var(--ink); }
+  .cert.dark{ background:var(--olive); border-color:var(--olive); }
+  .cert.dark b{ color:var(--brass-bright); }
+  .cert.dark p{ color:#E8E6DB; }
+  .certnote{ font-size:12.5px; font-style:italic; color:var(--muted); margin-top:8px; }
+
+  /* ── Additional ── */
+  .extra ul{ list-style:none; }
+  .extra li{ position:relative; padding-left:22px; margin-bottom:6px; font-size:14px; }
+  .extra li::before{ content:"✔"; position:absolute; left:0; color:var(--brass); font-weight:700; }
+  footer{ padding:16px 40px 26px; font-size:12px; color:var(--muted); font-style:italic; border-top:1px solid var(--line); background:var(--paper); }
+
+  /* ── AI badge ── */
+  .ai{ background:var(--olive); color:#E8E6DB; border-radius:6px; padding:12px 14px; font-size:13px; margin-top:8px; }
+  .ai b{ color:var(--brass-bright); display:block; margin-bottom:3px; font-size:13.5px; }
+
+  @media (max-width:760px){
+    .body{ grid-template-columns:1fr; }
+    aside{ border-right:none; border-bottom:1px solid var(--line); }
+    .stats{ grid-template-columns:repeat(2,1fr); }
+    .stat:nth-child(2){ border-right:none; }
+    .certgrid{ grid-template-columns:1fr; }
+    header{ padding:32px 24px; } main{ padding:24px; } h1{ font-size:32px; }
+  }
+  @media print{
+    body{ background:#fff; }
+    .page{ box-shadow:none; margin:0; max-width:none; }
+    header::after{ display:none; }
+    a{ color:inherit; text-decoration:none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <h1>Коломієць Роман <span class="patronymic">Олегович</span></h1>
+    <div class="role">Designer · UX/UI · Візуальні комунікації · Дата-аналітика</div>
+    <div class="target">Кандидат на посаду в Міністерстві оборони України</div>
+    <div class="contacts">
+      <span><b>Тел.</b> 098 707-74-67</span>
+      <span><b>Email</b> romankolomiets@gmail.com</span>
+      <span><b>Локація</b> Київ / Київська обл.</span>
+      <span><b>АРМІЯ ID</b> 325 003 092</span>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><div class="n">17 років</div><div class="l">досвіду в дизайні</div></div>
+    <div class="stat"><div class="n">21</div><div class="l">сертифікат · 2026</div></div>
+    <div class="stat"><div class="n">10+ міс.</div><div class="l">служби в ЗСУ</div></div>
+    <div class="stat"><div class="n">КПІ · ФТІ</div><div class="l">прикладна фізика</div></div>
+  </div>
+
+  <div class="body">
+    <aside>
+      <h2>Навички</h2>
+      <div class="item"><b>Дизайн</b><span>Figma, Photoshop, Illustrator, InDesign, Corel, PowerPoint</span></div>
+      <div class="item"><b>Інфографіка</b><span>Візуалізація даних, дашборди, схеми, карти мереж</span></div>
+      <div class="item"><b>Відео / Анімація</b><span>Premiere Pro, Animate, After Effects</span></div>
+      <div class="item"><b>IT / Системи ЗСУ</b><span>Zabbix, Delta, ІКС ВIRAЖ, ЗАТК Слід / Тест (МедЕВАК), MDM, Microsoft 365</span></div>
+      <div class="item"><b>Розробка</b><span>HTML, CSS, базовий JavaScript, Git</span></div>
+      <div class="item"><b>Документи</b><span>Службова документація ЗСУ, накази, звіти, презентації, ЖБД</span></div>
+
+      <div class="ai"><b>AI-інструменти · 4 роки</b>Claude · ChatGPT · Grok — генерація концепцій, прототипування, автоматизація задач, робота з текстами та даними.</div>
+
+      <h2>Мови</h2>
+      <div class="item"><b>Українська</b><span>Рідна</span></div>
+      <div class="item"><b>Англійська</b><span>Вище середнього — технічна документація, базове спілкування</span></div>
+      <div class="item"><b>Руська</b><span>Рідна</span></div>
+
+      <h2>Освіта</h2>
+      <div class="item"><b>Прикладна фізика</b><span>КПІ ім. Ігоря Сікорського, Фізико-технічний інститут · 2004–2011</span></div>
+      <div class="item"><span>Спеціаліст — КВ39983760<br>Бакалавр — КВ37367864</span></div>
+      <div class="item"><span style="font-style:italic; color:var(--muted); font-size:12.5px;">Дипломна робота: магнієво-вуглецеві та воднево-вуглецеві нанокомпозити, механохімічний синтез.</span></div>
+    </aside>
+
+    <main>
+      <h2>Профіль</h2>
+      <p>Дизайнер з 17-річним досвідом у сферах UX/UI, веб-дизайну, візуальних комунікацій та інфографіки. Випускник Фізико-технічного інституту КПІ.</p>
+      <p style="margin-top:8px;">Маю аналітичне мислення та розуміння складних технічних систем, що дозволяє ефективно візуалізувати дані та створювати зрозумілі комунікаційні матеріали. Останні 4 роки активно використовую AI-інструменти (Claude, ChatGPT, Grok) для підвищення ефективності професійної діяльності.</p>
+      <p style="margin-top:8px;">Протягом 9+ місяців служби в ЗСУ здобув досвід роботи з інформаційними системами оборонного сектору, цифровізації процесів та роботи з чутливою інформацією. Готовий застосовувати весь накопичений досвід в інтересах Міноборони України.</p>
+
+      <h2>Досвід роботи</h2>
+
+      <div class="job">
+        <h3>Штаб-сержант 3 кат. — група цифрового розвитку, цифрової трансформації та цифровізації штабу в/ч А5118</h3>
+        <div class="meta"><span class="org">120 ОБЗ (в/ч А5118), ЗСУ</span> <span class="rest">| 09.2025 — дотепер (10+ міс.) | Київська обл.</span></div>
+        <div class="lede">Технічна та візуально-комунікаційна робота на стику IT і дизайну.</div>
+        <ul>
+          <li>Обслуговування серверної інфраструктури, моніторинг мереж у Zabbix</li>
+          <li>Розгортання та адміністрування ІКС ВIРAЖ, ЗАТК Слід, ЗАТК Тест (МедЕВАК), MDM</li>
+          <li>Робота в системах Delta та спеціалізованому ПЗ ЗСУ</li>
+          <li>Розробка схем та карт мереж вузлів зв'язку, топологічних діаграм</li>
+          <li>Підготовка службових документів, наказів, звітів, презентацій для штабу</li>
+          <li>Участь у цифровізації та цифровій трансформації батальйону</li>
+          <li>Робота з чутливою службовою інформацією, режим секретності</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>UX Strategist / Designer</h3>
+        <div class="meta"><span class="org">ТОВ «МСЛ»</span> <span class="rest">| 11.2021 — 12.2024 (3 р. 2 міс.) | Київ · IT</span></div>
+        <ul>
+          <li>Проєктування інтерфейсів для веб та мобільних застосунків у Figma</li>
+          <li>Розробка UI-компонентів, дизайн-систем та прототипів</li>
+          <li>Підготовка презентацій, інфографіки та візуальних комунікаційних матеріалів</li>
+          <li>Взаємодія з розробниками, product-менеджерами та стейкхолдерами</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Designer (Web / UI / UX)</h3>
+        <div class="meta"><span class="org">ALDI Ukraine</span> <span class="rest">| 08.2017 — 09.2021 (4 р. 2 міс.) | Київ · Роздрібна торгівля</span></div>
+        <ul>
+          <li>Розробка цифрових та друкованих маркетингових матеріалів, брендингу</li>
+          <li>Дизайн презентацій для топ-менеджменту та корпоративних заходів</li>
+          <li>Підтримка єдиного візуального стилю комунікацій компанії</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Designer / Interface Developer</h3>
+        <div class="meta"><span class="org">FIBO Group</span> <span class="rest">| 02.2014 — 07.2017 (3 р. 6 міс.) | Київ · Фінанси</span></div>
+        <ul>
+          <li>UX/UI дизайн для фінтех-продуктів, торгових платформ та клієнтських інтерфейсів</li>
+          <li>Розробка front-end компонентів, HTML/CSS верстка</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Web UX/UI Designer · Web Designer (Front-end)</h3>
+        <div class="meta"><span class="org">Binarum / uTrader / systemforex / Marketing Agency Marks</span> <span class="rest">| 01.2008 — 09.2015 | Київ</span></div>
+        <ul>
+          <li>Дизайн веб-сайтів, банерів, лендінгів для фінансових та маркетингових компаній</li>
+          <li>Front-end розробка, верстка, Flash/Animate анімації</li>
+        </ul>
+      </div>
+
+      <h2>Сертифікати — 21 курс (2026)</h2>
+      <div class="certgrid">
+        <div class="cert"><b>Цифрові системи ЗСУ</b><p>DELTA · СЕДО (цифровий документообіг у війську) · Система DOT-Chain · Цифрова трансформація</p></div>
+        <div class="cert"><b>Зв'язок та РЕБ</b><p>Основи зв'язку на полі бою · Основи РЕБ · ГРАФІТ (моніторинг ворожих БпЛА у реальному часі)</p></div>
+        <div class="cert"><b>Кібербезпека</b><p>Кібергігієна 2.0 · Інформаційна стійкість: Кібербезпека · Протидія ворожій ІПСО</p></div>
+        <div class="cert"><b>Новітні технології</b><p>Дрони на оптоволокні · Наземні роботизовані комплекси</p></div>
+        <div class="cert"><b>Загальновійськові</b><p>Тактична медицина · Психологічна підготовка · Фінансова грамотність</p></div>
+        <div class="cert dark"><b>Освіта Дія — 6 курсів</b><p>Датааналітик: Вступ до Excel · SQL та Power BI · Штучний інтелект (ШІ) · Інженер із комп'ютерних систем і мереж · Створення та розвиток ІТ-продуктів · Цифровий бізнес</p></div>
+      </div>
+      <div class="certnote">Військові сертифікати (15) пройдені під час служби, березень–квітень 2026. Надаються за запитом.</div>
+
+      <h2>Додатково</h2>
+      <div class="extra">
+        <ul>
+          <li>Чинний військовослужбовець ЗСУ — готовий до переведення в МОУ</li>
+          <li>Готовність до проходження поліграфу та фонової перевірки</li>
+          <li>Досвід роботи з чутливою службовою інформацією та дотримання режиму секретності</li>
+          <li>Швидко навчаюся, ініціативний, звик працювати в умовах стислих дедлайнів</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <footer>Резюме створено виключно для МОУ на вакансію Дизайнер / Дата-аналітик (robota.ua/candidates/18276535)</footer>
+</div>
+</body>
+</html>
