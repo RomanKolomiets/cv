@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Коломієць Роман — Презентація-резюме</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+  /* Slide canvas = 10in × 5.625in → 1280×720 px (128 px/in, 1pt = 1.778px) */
+  :root{
+    --olive:#3E4637; --olive2:#2E3429; --brass:#B08D3A; --brass2:#8C6F2F;
+    --sand:#EFEBDD; --ink:#24281F; --muted:#6B7060; --white:#FFFFFF;
+    --cream:#D8DACF; --creamd:#E8E6DB; --dim:#C9CDBF;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ height:100%; }
+  body{ background:#1b1f18; font-family:Calibri, 'Segoe UI', sans-serif; overflow:hidden; }
+
+  #stage{ position:fixed; inset:0 0 64px 0; display:flex; align-items:center; justify-content:center; }
+  .scaler{ width:1280px; height:720px; transform-origin:center center; position:relative; }
+
+  .slide{ position:absolute; inset:0; width:1280px; height:720px; display:none; box-shadow:0 10px 60px rgba(0,0,0,.5); }
+  .slide.active{ display:block; }
+  .el{ position:absolute; }
+
+  /* controls */
+  #bar{ position:fixed; left:0; right:0; bottom:0; height:64px; display:flex; align-items:center; justify-content:center; gap:18px; background:#141712; }
+  #bar button{ background:var(--olive); color:#fff; border:1px solid var(--brass); border-radius:6px; font-size:15px; padding:8px 22px; cursor:pointer; font-family:inherit; }
+  #bar button:hover{ background:var(--brass2); }
+  #counter{ color:var(--cream); font-size:14px; min-width:64px; text-align:center; }
+
+  .circle{ border-radius:50%; display:flex; align-items:center; justify-content:center; }
+
+  .card{ border-radius:8px; }
+  .shadow{ box-shadow:0 3px 9px rgba(0,0,0,.18); }
+
+  @media print{
+    body{ background:#fff; overflow:visible; }
+    #stage{ position:static; inset:auto; display:block; }
+    .scaler{ transform:none !important; width:1280px; height:auto; }
+    .slide{ display:block !important; position:relative; margin:0 auto 20px; box-shadow:none; page-break-after:always; }
+    #bar{ display:none; }
+  }
+</style>
+</head>
+<body>
+
+<div id="stage"><div class="scaler" id="scaler">
+
+<!-- ═══════════ SLIDE 1 — TITLE ═══════════ -->
+<section class="slide active" style="background:var(--olive2)">
+  <div class="el" style="left:57.6px; top:57.6px; width:1164.8px; height:604.2px; border:1.6px solid var(--brass);"></div>
+  <div class="el" style="left:115px; top:147px; width:1050px; font-size:78px; font-weight:bold; color:#fff; letter-spacing:5px;">КОЛОМІЄЦЬ РОМАН</div>
+  <div class="el" style="left:115px; top:237px; width:1050px; font-size:53px; font-weight:bold; color:var(--brass); letter-spacing:10px;">ОЛЕГОВИЧ</div>
+  <div class="el" style="left:115px; top:335px; width:1050px; font-size:32px; color:var(--cream);">Designer · UX/UI · Візуальні комунікації · Дата-аналітика</div>
+  <div class="el" style="left:115px; top:390px; width:1050px; font-size:28px; font-style:italic; color:#A9AE9D;">Кандидат на посаду в Міністерстві оборони України</div>
+
+  <div class="el circle" style="left:115px; top:531px; width:44px; height:44px; background:var(--olive);"><i class="fa-solid fa-phone" style="color:var(--brass); font-size:19px;"></i></div>
+  <div class="el" style="left:169px; top:531px; width:250px; height:44px; font-size:23px; color:#fff; display:flex; align-items:center;">098 707-74-67</div>
+  <div class="el circle" style="left:416px; top:531px; width:44px; height:44px; background:var(--olive);"><i class="fa-solid fa-envelope" style="color:var(--brass); font-size:19px;"></i></div>
+  <div class="el" style="left:470px; top:531px; width:370px; height:44px; font-size:23px; color:#fff; display:flex; align-items:center;">romankolomiets@gmail.com</div>
+  <div class="el circle" style="left:864px; top:531px; width:44px; height:44px; background:var(--olive);"><i class="fa-solid fa-location-dot" style="color:var(--brass); font-size:19px;"></i></div>
+  <div class="el" style="left:918px; top:531px; width:300px; height:44px; font-size:23px; color:#fff; display:flex; align-items:center;">Київ · АРМІЯ ID 325 003 092</div>
+</section>
+
+<!-- ═══════════ SLIDE 2 — PROFILE + STATS ═══════════ -->
+<section class="slide" style="background:#fff">
+  <div class="el" style="left:70px; top:45px; font-size:60px; font-weight:bold; color:var(--olive);">Профіль</div>
+
+  <div class="el card shadow" style="left:70px;  top:134px; width:271px; height:147px; background:var(--olive);"></div>
+  <div class="el card shadow" style="left:367px; top:134px; width:271px; height:147px; background:var(--olive);"></div>
+  <div class="el card shadow" style="left:664px; top:134px; width:271px; height:147px; background:var(--olive);"></div>
+  <div class="el card shadow" style="left:961px; top:134px; width:271px; height:147px; background:var(--olive);"></div>
+  <div class="el" style="left:70px;  top:146px; width:271px; text-align:center; font-size:43px; font-weight:bold; color:#fff;">17 років</div>
+  <div class="el" style="left:367px; top:146px; width:271px; text-align:center; font-size:43px; font-weight:bold; color:#fff;">21</div>
+  <div class="el" style="left:664px; top:146px; width:271px; text-align:center; font-size:43px; font-weight:bold; color:#fff;">10+ міс.</div>
+  <div class="el" style="left:961px; top:146px; width:271px; text-align:center; font-size:43px; font-weight:bold; color:#fff;">КПІ · ФТІ</div>
+  <div class="el" style="left:70px;  top:212px; width:271px; text-align:center; font-size:20px; color:var(--cream);">досвіду в дизайні</div>
+  <div class="el" style="left:367px; top:212px; width:271px; text-align:center; font-size:20px; color:var(--cream);">сертифікат · 2026</div>
+  <div class="el" style="left:664px; top:212px; width:271px; text-align:center; font-size:20px; color:var(--cream);">служби в ЗСУ</div>
+  <div class="el" style="left:961px; top:212px; width:271px; text-align:center; font-size:20px; color:var(--cream);">прикладна фізика</div>
+
+  <div class="el" style="left:77px; top:333px; font-size:34px; color:var(--brass);"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="el" style="left:134px; top:326px; width:1075px; height:87px; font-size:24px; color:var(--ink); display:flex; align-items:center;">Дизайнер з 17-річним досвідом у сферах UX/UI, веб-дизайну, візуальних комунікацій та інфографіки. Випускник Фізико-технічного інституту КПІ.</div>
+  <div class="el" style="left:77px; top:425px; font-size:34px; color:var(--brass);"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="el" style="left:134px; top:418px; width:1075px; height:87px; font-size:24px; color:var(--ink); display:flex; align-items:center;">Аналітичне мислення та розуміння складних технічних систем — ефективна візуалізація даних і зрозумілі комунікаційні матеріали.</div>
+  <div class="el" style="left:77px; top:517px; font-size:34px; color:var(--brass);"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="el" style="left:134px; top:510px; width:1075px; height:87px; font-size:24px; color:var(--ink); display:flex; align-items:center;">Останні 4 роки активно використовую AI-інструменти (Claude, ChatGPT, Grok): генерація концепцій, прототипування, автоматизація рутинних задач.</div>
+  <div class="el" style="left:77px; top:609px; font-size:34px; color:var(--brass);"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="el" style="left:134px; top:602px; width:1075px; height:87px; font-size:24px; color:var(--ink); display:flex; align-items:center;">9+ місяців служби в ЗСУ: інформаційні системи оборонного сектору, цифровізація процесів, робота з чутливою інформацією.</div>
+</section>
+
+<!-- ═══════════ SLIDE 3 — TIMELINE ═══════════ -->
+<section class="slide" style="background:var(--sand)">
+  <div class="el" style="left:70px; top:45px; font-size:57px; font-weight:bold; color:var(--olive);">Кар'єрний шлях — 17 років</div>
+  <div class="el" style="left:90px; top:369px; width:1100px; height:4px; background:var(--olive);"></div>
+
+  <!-- nodes: cx = 160 + i*243 -->
+  <div class="el circle" style="left:148px; top:359px; width:23px; height:23px; background:var(--olive);"></div>
+  <div class="el circle" style="left:391px; top:359px; width:23px; height:23px; background:var(--olive);"></div>
+  <div class="el circle" style="left:635px; top:359px; width:23px; height:23px; background:var(--olive);"></div>
+  <div class="el circle" style="left:878px; top:359px; width:23px; height:23px; background:var(--olive);"></div>
+  <div class="el circle" style="left:1121px; top:359px; width:23px; height:23px; background:var(--brass);"></div>
+
+  <!-- card template: w220 h192; up: top=147; down: top=403 -->
+  <div class="el card shadow" style="left:50px; top:147px; width:220px; height:192px; background:#fff;"></div>
+  <div class="el" style="left:50px; top:155px; width:220px; text-align:center; font-size:22px; font-weight:bold; color:var(--brass);">2008–2015</div>
+  <div class="el" style="left:54px; top:193px; width:212px; text-align:center; font-size:20px; font-weight:bold; color:var(--ink);">Web UX/UI Designer</div>
+  <div class="el" style="left:54px; top:269px; width:212px; text-align:center; font-size:17px; color:var(--muted);">Binarum · uTrader · systemforex · Marks</div>
+
+  <div class="el card shadow" style="left:293px; top:403px; width:220px; height:192px; background:#fff;"></div>
+  <div class="el" style="left:293px; top:411px; width:220px; text-align:center; font-size:22px; font-weight:bold; color:var(--brass);">2014–2017</div>
+  <div class="el" style="left:297px; top:449px; width:212px; text-align:center; font-size:20px; font-weight:bold; color:var(--ink);">Designer / Interface Dev</div>
+  <div class="el" style="left:297px; top:525px; width:212px; text-align:center; font-size:17px; color:var(--muted);">FIBO Group · фінанси</div>
+
+  <div class="el card shadow" style="left:537px; top:147px; width:220px; height:192px; background:#fff;"></div>
+  <div class="el" style="left:537px; top:155px; width:220px; text-align:center; font-size:22px; font-weight:bold; color:var(--brass);">2017–2021</div>
+  <div class="el" style="left:541px; top:193px; width:212px; text-align:center; font-size:20px; font-weight:bold; color:var(--ink);">Designer Web/UI/UX</div>
+  <div class="el" style="left:541px; top:269px; width:212px; text-align:center; font-size:17px; color:var(--muted);">ALDI Ukraine · рітейл</div>
+
+  <div class="el card shadow" style="left:780px; top:403px; width:220px; height:192px; background:#fff;"></div>
+  <div class="el" style="left:780px; top:411px; width:220px; text-align:center; font-size:22px; font-weight:bold; color:var(--brass);">2021–2024</div>
+  <div class="el" style="left:784px; top:449px; width:212px; text-align:center; font-size:20px; font-weight:bold; color:var(--ink);">UX Strategist / Designer</div>
+  <div class="el" style="left:784px; top:525px; width:212px; text-align:center; font-size:17px; color:var(--muted);">ТОВ «МСЛ» · IT</div>
+
+  <div class="el card shadow" style="left:1023px; top:147px; width:220px; height:192px; background:var(--olive);"></div>
+  <div class="el" style="left:1023px; top:155px; width:220px; text-align:center; font-size:22px; font-weight:bold; color:var(--brass);">2025–нині</div>
+  <div class="el" style="left:1027px; top:193px; width:212px; text-align:center; font-size:20px; font-weight:bold; color:#fff;">Штаб-сержант, цифровізація</div>
+  <div class="el" style="left:1027px; top:269px; width:212px; text-align:center; font-size:17px; color:var(--cream);">120 ОБЗ, ЗСУ</div>
+</section>
+
+<!-- ═══════════ SLIDE 4 — ЗСУ SERVICE ═══════════ -->
+<section class="slide" style="background:#fff">
+  <div class="el" style="left:70px; top:41px; font-size:53px; font-weight:bold; color:var(--olive);">Служба в ЗСУ — поточна посада</div>
+  <div class="el" style="left:73px; top:118px; width:1152px; font-size:23px; font-style:italic; color:var(--muted);">Штаб-сержант 3 кат. · група цифрового розвитку, цифрової трансформації та цифровізації штабу · 120 ОБЗ (в/ч А5118) · 09.2025 — дотепер</div>
+
+  <!-- rows y = 192 + i*100 ; icon 67px -->
+  <div class="el circle" style="left:77px; top:192px; width:67px; height:67px; background:var(--olive);"><i class="fa-solid fa-server" style="color:#fff; font-size:28px;"></i></div>
+  <div class="el" style="left:166px; top:189px; width:397px; height:70px; font-size:26px; font-weight:bold; color:var(--ink); display:flex; align-items:center;">Серверна інфраструктура</div>
+  <div class="el" style="left:570px; top:189px; width:653px; height:70px; font-size:22px; color:var(--muted); display:flex; align-items:center;">Обслуговування, налагодження, моніторинг мереж у Zabbix</div>
+
+  <div class="el circle" style="left:77px; top:292px; width:67px; height:67px; background:var(--olive);"><i class="fa-solid fa-satellite-dish" style="color:#fff; font-size:28px;"></i></div>
+  <div class="el" style="left:166px; top:289px; width:397px; height:70px; font-size:26px; font-weight:bold; color:var(--ink); display:flex; align-items:center;">Системи ЗСУ</div>
+  <div class="el" style="left:570px; top:289px; width:653px; height:70px; font-size:22px; color:var(--muted); display:flex; align-items:center;">Розгортання ІКС ВIРAЖ, ЗАТК Слід / Тест (МедЕВАК), MDM · робота в Delta</div>
+
+  <div class="el circle" style="left:77px; top:392px; width:67px; height:67px; background:var(--olive);"><i class="fa-solid fa-network-wired" style="color:#fff; font-size:28px;"></i></div>
+  <div class="el" style="left:166px; top:389px; width:397px; height:70px; font-size:26px; font-weight:bold; color:var(--ink); display:flex; align-items:center;">Схеми та топології</div>
+  <div class="el" style="left:570px; top:389px; width:653px; height:70px; font-size:22px; color:var(--muted); display:flex; align-items:center;">Карти мереж вузлів зв'язку, топологічні діаграми</div>
+
+  <div class="el circle" style="left:77px; top:492px; width:67px; height:67px; background:var(--olive);"><i class="fa-solid fa-file-lines" style="color:#fff; font-size:28px;"></i></div>
+  <div class="el" style="left:166px; top:489px; width:397px; height:70px; font-size:26px; font-weight:bold; color:var(--ink); display:flex; align-items:center;">Штабна документація</div>
+  <div class="el" style="left:570px; top:489px; width:653px; height:70px; font-size:22px; color:var(--muted); display:flex; align-items:center;">Накази, звіти, презентації для командування</div>
+
+  <div class="el circle" style="left:77px; top:592px; width:67px; height:67px; background:var(--olive);"><i class="fa-solid fa-shield-halved" style="color:#fff; font-size:28px;"></i></div>
+  <div class="el" style="left:166px; top:589px; width:397px; height:70px; font-size:26px; font-weight:bold; color:var(--ink); display:flex; align-items:center;">Режим секретності</div>
+  <div class="el" style="left:570px; top:589px; width:653px; height:70px; font-size:22px; color:var(--muted); display:flex; align-items:center;">Робота з чутливою службовою інформацією</div>
+</section>
+
+<!-- ═══════════ SLIDE 5 — CIVIL EXPERIENCE ═══════════ -->
+<section class="slide" style="background:var(--sand)">
+  <div class="el" style="left:70px; top:41px; font-size:53px; font-weight:bold; color:var(--olive);">Цивільний досвід — продуктовий дизайн</div>
+
+  <div class="el card shadow" style="left:70px; top:134px; width:557px; height:250px; background:#fff;"></div>
+  <div class="el" style="left:96px; top:147px; width:506px; font-size:21px; font-weight:bold; color:var(--brass);">ТОВ «МСЛ» · 2021–2024</div>
+  <div class="el" style="left:96px; top:185px; width:506px; font-size:27px; font-weight:bold; color:var(--ink);">UX Strategist / Designer</div>
+  <div class="el" style="left:96px; top:234px; width:506px; font-size:19px; color:var(--muted); line-height:1.35;">Інтерфейси веб і мобільних застосунків у Figma · UI-компоненти, дизайн-системи, прототипи · презентації та інфографіка · взаємодія з розробкою і продактами</div>
+
+  <div class="el card shadow" style="left:661px; top:134px; width:557px; height:250px; background:#fff;"></div>
+  <div class="el" style="left:687px; top:147px; width:506px; font-size:21px; font-weight:bold; color:var(--brass);">ALDI Ukraine · 2017–2021</div>
+  <div class="el" style="left:687px; top:185px; width:506px; font-size:27px; font-weight:bold; color:var(--ink);">Designer (Web / UI / UX)</div>
+  <div class="el" style="left:687px; top:234px; width:506px; font-size:19px; color:var(--muted); line-height:1.35;">Цифрові та друковані маркетингові матеріали, брендинг · презентації для топ-менеджменту · єдиний візуальний стиль компанії</div>
+
+  <div class="el card shadow" style="left:70px; top:409px; width:557px; height:250px; background:#fff;"></div>
+  <div class="el" style="left:96px; top:422px; width:506px; font-size:21px; font-weight:bold; color:var(--brass);">FIBO Group · 2014–2017</div>
+  <div class="el" style="left:96px; top:460px; width:506px; font-size:27px; font-weight:bold; color:var(--ink);">Designer / Interface Developer</div>
+  <div class="el" style="left:96px; top:509px; width:506px; font-size:19px; color:var(--muted); line-height:1.35;">UX/UI для фінтех-продуктів і торгових платформ · front-end компоненти, HTML/CSS верстка</div>
+
+  <div class="el card shadow" style="left:661px; top:409px; width:557px; height:250px; background:#fff;"></div>
+  <div class="el" style="left:687px; top:422px; width:506px; font-size:21px; font-weight:bold; color:var(--brass);">2008–2015</div>
+  <div class="el" style="left:687px; top:460px; width:506px; font-size:27px; font-weight:bold; color:var(--ink);">Web UX/UI Designer</div>
+  <div class="el" style="left:687px; top:509px; width:506px; font-size:19px; color:var(--muted); line-height:1.35;">Binarum, uTrader, systemforex, Marks · сайти, банери, лендінги · верстка, Flash/Animate анімації</div>
+</section>
+
+<!-- ═══════════ SLIDE 6 — SKILLS ═══════════ -->
+<section class="slide" style="background:#fff">
+  <div class="el" style="left:70px; top:41px; font-size:53px; font-weight:bold; color:var(--olive);">Навички та інструменти</div>
+
+  <!-- card: w365 h237; x=70+col*397; y=147+row*262 -->
+  <div class="el card" style="left:70px; top:147px; width:365px; height:237px; background:var(--sand);"></div>
+  <div class="el circle" style="left:98px; top:173px; width:64px; height:64px; background:var(--olive);"><i class="fa-solid fa-pen-ruler" style="color:#fff; font-size:26px;"></i></div>
+  <div class="el" style="left:179px; top:175px; width:243px; height:64px; font-size:25px; font-weight:bold; color:var(--ink); display:flex; align-items:center;">Дизайн</div>
+  <div class="el" style="left:98px; top:256px; width:314px; font-size:20px; color:var(--muted); line-height:1.3;">Figma · Photoshop · Illustrator · InDesign · Corel · PowerPoint</div>
+
+  <div class="el card" style="left:467px; top:147px; width:365px; height:237px; background:var(--sand);"></div>
+  <div class="el circle" style="left:495px; top:173px; width:64px; height:64px; background:var(--olive);"><i class="fa-solid fa-chart-column" style="color:#fff; font-size:26px;"></i></div>
+  <div class="el" style="left:576px; top:175px; width:243px; height:64px; font-size:25px; font-weight:bold; color:var(--ink); display:flex; align-items:center;">Інфографіка</div>
+  <div class="el" style="left:495px; top:256px; width:314px; font-size:20px; color:var(--muted); line-height:1.3;">Візуалізація даних · дашборди · схеми · карти мереж</div>
+
+  <div class="el card" style="left:864px; top:147px; width:365px; height:237px; background:var(--sand);"></div>
+  <div class="el circle" style="left:892px; top:173px; width:64px; height:64px; background:var(--olive);"><i class="fa-solid fa-video" style="color:#fff; font-size:26px;"></i></div>
+  <div class="el" style="left:973px; top:175px; width:243px; height:64px; font-size:25px; font-weight:bold; color:var(--ink); display:flex; align-items:center;">Відео / Анімація</div>
+  <div class="el" style="left:892px; top:256px; width:314px; font-size:20px; color:var(--muted); line-height:1.3;">Premiere Pro · Animate · After Effects</div>
+
+  <div class="el card" style="left:70px; top:409px; width:365px; height:237px; background:var(--sand);"></div>
+  <div class="el circle" style="left:98px; top:435px; width:64px; height:64px; background:var(--olive);"><i class="fa-solid fa-screwdriver-wrench" style="color:#fff; font-size:26px;"></i></div>
+  <div class="el" style="left:179px; top:437px; width:243px; height:64px; font-size:25px; font-weight:bold; color:var(--ink); display:flex; align-items:center;">IT / Системи ЗСУ</div>
+  <div class="el" style="left:98px; top:518px; width:314px; font-size:20px; color:var(--muted); line-height:1.3;">Zabbix · Delta · ІКС ВIRAЖ · ЗАТК Слід/Тест · MDM · MS 365</div>
+
+  <div class="el card" style="left:467px; top:409px; width:365px; height:237px; background:var(--sand);"></div>
+  <div class="el circle" style="left:495px; top:435px; width:64px; height:64px; background:var(--olive);"><i class="fa-solid fa-code" style="color:#fff; font-size:26px;"></i></div>
+  <div class="el" style="left:576px; top:437px; width:243px; height:64px; font-size:25px; font-weight:bold; color:var(--ink); display:flex; align-items:center;">Розробка</div>
+  <div class="el" style="left:495px; top:518px; width:314px; font-size:20px; color:var(--muted); line-height:1.3;">HTML · CSS · базовий JavaScript · Git</div>
+
+  <div class="el card" style="left:864px; top:409px; width:365px; height:237px; background:var(--sand);"></div>
+  <div class="el circle" style="left:892px; top:435px; width:64px; height:64px; background:var(--olive);"><i class="fa-solid fa-robot" style="color:#fff; font-size:26px;"></i></div>
+  <div class="el" style="left:973px; top:437px; width:243px; height:64px; font-size:25px; font-weight:bold; color:var(--ink); display:flex; align-items:center;">AI-інструменти</div>
+  <div class="el" style="left:892px; top:518px; width:314px; font-size:20px; color:var(--muted); line-height:1.3;">Claude · ChatGPT · Grok — 4 роки активного використання</div>
+</section>
+
+<!-- ═══════════ SLIDE 7 — CERTIFICATES ═══════════ -->
+<section class="slide" style="background:var(--sand)">
+  <div class="el" style="left:70px; top:41px; font-size:53px; font-weight:bold; color:var(--olive);">Сертифікати — 21 курс (2026)</div>
+
+  <div class="el card shadow" style="left:70px; top:134px; width:730px; height:531px; background:#fff;"></div>
+  <div class="el circle" style="left:102px; top:164px; width:64px; height:64px; background:var(--olive);"><i class="fa-solid fa-medal" style="color:#fff; font-size:26px;"></i></div>
+  <div class="el" style="left:186px; top:166px; width:589px; height:64px; font-size:27px; font-weight:bold; color:var(--ink); display:flex; align-items:center;">Військові курси — 15 сертифікатів</div>
+
+  <div class="el" style="left:102px; top:256px; width:269px; font-size:20px; font-weight:bold; color:var(--brass);">Цифрові системи ЗСУ</div>
+  <div class="el" style="left:378px; top:256px; width:403px; font-size:19px; color:var(--ink); line-height:1.3;">DELTA · СЕДО · DOT-Chain · Цифрова трансформація</div>
+  <div class="el" style="left:102px; top:335px; width:269px; font-size:20px; font-weight:bold; color:var(--brass);">Зв'язок та РЕБ</div>
+  <div class="el" style="left:378px; top:335px; width:403px; font-size:19px; color:var(--ink); line-height:1.3;">Основи зв'язку на полі бою · Основи РЕБ · ГРАФІТ (БпЛА)</div>
+  <div class="el" style="left:102px; top:414px; width:269px; font-size:20px; font-weight:bold; color:var(--brass);">Кібербезпека</div>
+  <div class="el" style="left:378px; top:414px; width:403px; font-size:19px; color:var(--ink); line-height:1.3;">Кібергігієна 2.0 · Кібербезпека · Протидія ІПСО</div>
+  <div class="el" style="left:102px; top:494px; width:269px; font-size:20px; font-weight:bold; color:var(--brass);">Новітні технології</div>
+  <div class="el" style="left:378px; top:494px; width:403px; font-size:19px; color:var(--ink); line-height:1.3;">Дрони на оптоволокні · Наземні роботизовані комплекси</div>
+  <div class="el" style="left:102px; top:573px; width:269px; font-size:20px; font-weight:bold; color:var(--brass);">Загальновійськові</div>
+  <div class="el" style="left:378px; top:573px; width:403px; font-size:19px; color:var(--ink); line-height:1.3;">Тактична медицина · Психологічна підготовка · Фінансова грамотність</div>
+
+  <div class="el card shadow" style="left:826px; top:134px; width:384px; height:531px; background:var(--olive);"></div>
+  <div class="el circle" style="left:855px; top:164px; width:64px; height:64px; background:var(--olive2);"><i class="fa-solid fa-certificate" style="color:#fff; font-size:26px;"></i></div>
+  <div class="el" style="left:934px; top:166px; width:256px; height:64px; font-size:26px; font-weight:bold; color:#fff; display:flex; align-items:center;">ОСВІТА Дія — 6</div>
+
+  <div class="el circle" style="left:860px; top:265px; width:12px; height:12px; background:var(--brass);"></div>
+  <div class="el" style="left:890px; top:250px; width:307px; font-size:19px; color:var(--creamd); line-height:1.25;">Датааналітик: Вступ до Excel</div>
+  <div class="el circle" style="left:860px; top:332px; width:12px; height:12px; background:var(--brass);"></div>
+  <div class="el" style="left:890px; top:317px; width:307px; font-size:19px; color:var(--creamd); line-height:1.25;">Датааналітик: SQL та Power BI</div>
+  <div class="el circle" style="left:860px; top:398px; width:12px; height:12px; background:var(--brass);"></div>
+  <div class="el" style="left:890px; top:383px; width:307px; font-size:19px; color:var(--creamd); line-height:1.25;">Штучний інтелект (ШІ)</div>
+  <div class="el circle" style="left:860px; top:465px; width:12px; height:12px; background:var(--brass);"></div>
+  <div class="el" style="left:890px; top:450px; width:307px; font-size:19px; color:var(--creamd); line-height:1.25;">Інженер із комп'ютерних систем і мереж</div>
+  <div class="el circle" style="left:860px; top:531px; width:12px; height:12px; background:var(--brass);"></div>
+  <div class="el" style="left:890px; top:516px; width:307px; font-size:19px; color:var(--creamd); line-height:1.25;">Створення та розвиток ІТ-продуктів</div>
+  <div class="el circle" style="left:860px; top:598px; width:12px; height:12px; background:var(--brass);"></div>
+  <div class="el" style="left:890px; top:583px; width:307px; font-size:19px; color:var(--creamd); line-height:1.25;">Цифровий бізнес</div>
+</section>
+
+<!-- ═══════════ SLIDE 8 — EDUCATION + LANGUAGES ═══════════ -->
+<section class="slide" style="background:#fff">
+  <div class="el" style="left:70px; top:41px; font-size:53px; font-weight:bold; color:var(--olive);">Освіта та мови</div>
+
+  <div class="el card" style="left:70px; top:141px; width:717px; height:499px; background:var(--sand);"></div>
+  <div class="el circle" style="left:105px; top:173px; width:72px; height:72px; background:var(--olive);"><i class="fa-solid fa-graduation-cap" style="color:#fff; font-size:30px;"></i></div>
+  <div class="el" style="left:198px; top:174px; width:563px; font-size:29px; font-weight:bold; color:var(--ink);">КПІ ім. Ігоря Сікорського</div>
+  <div class="el" style="left:198px; top:223px; width:563px; font-size:22px; color:var(--muted);">Фізико-технічний інститут · 2004–2011</div>
+  <div class="el" style="left:109px; top:301px; width:640px; font-size:27px; font-weight:bold; color:var(--brass);">Прикладна фізика</div>
+
+  <div class="el" style="left:109px; top:369px; font-size:27px; color:var(--brass);"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="el" style="left:154px; top:365px; width:608px; font-size:20px; color:var(--ink); line-height:1.3;">Спеціаліст — диплом КВ39983760</div>
+  <div class="el" style="left:109px; top:435px; font-size:27px; color:var(--brass);"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="el" style="left:154px; top:431px; width:608px; font-size:20px; color:var(--ink); line-height:1.3;">Бакалавр — диплом КВ37367864</div>
+  <div class="el" style="left:109px; top:502px; font-size:27px; color:var(--brass);"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="el" style="left:154px; top:498px; width:608px; font-size:20px; color:var(--ink); line-height:1.3;">Дипломна робота: магнієво-вуглецеві та воднево-вуглецеві нанокомпозити, механохімічний синтез</div>
+  <div class="el" style="left:109px; top:568px; font-size:27px; color:var(--brass);"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="el" style="left:154px; top:564px; width:608px; font-size:20px; color:var(--ink); line-height:1.3;">Аналітичне мислення, робота з великими масивами даних, точність і структурованість</div>
+
+  <div class="el card" style="left:819px; top:141px; width:390px; height:499px; background:var(--olive);"></div>
+  <div class="el circle" style="left:852px; top:173px; width:72px; height:72px; background:var(--olive2);"><i class="fa-solid fa-language" style="color:#fff; font-size:30px;"></i></div>
+  <div class="el" style="left:947px; top:182px; width:230px; font-size:30px; font-weight:bold; color:#fff;">Мови</div>
+
+  <div class="el" style="left:858px; top:288px; width:320px; font-size:24px; font-weight:bold; color:var(--brass);">Українська</div>
+  <div class="el" style="left:858px; top:326px; width:320px; font-size:19px; color:var(--creamd); line-height:1.3;">Рідна</div>
+  <div class="el" style="left:858px; top:403px; width:320px; font-size:24px; font-weight:bold; color:var(--brass);">Англійська</div>
+  <div class="el" style="left:858px; top:441px; width:320px; font-size:19px; color:var(--creamd); line-height:1.3;">Вище середнього — технічна документація, базове спілкування</div>
+  <div class="el" style="left:858px; top:518px; width:320px; font-size:24px; font-weight:bold; color:var(--brass);">Руська</div>
+  <div class="el" style="left:858px; top:556px; width:320px; font-size:19px; color:var(--creamd); line-height:1.3;">Рідна</div>
+</section>
+
+<!-- ═══════════ SLIDE 9 — CLOSING ═══════════ -->
+<section class="slide" style="background:var(--olive2)">
+  <div class="el" style="left:70px; top:51px; font-size:57px; font-weight:bold; color:#fff;">Чому я — для МОУ</div>
+
+  <div class="el" style="left:90px; top:168px; font-size:34px; color:var(--brass);"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="el" style="left:147px; top:160px; width:1062px; height:70px; font-size:26px; color:var(--creamd); display:flex; align-items:center;">Чинний військовослужбовець ЗСУ — готовий до переведення в МОУ</div>
+  <div class="el" style="left:90px; top:247px; font-size:34px; color:var(--brass);"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="el" style="left:147px; top:239px; width:1062px; height:70px; font-size:26px; color:var(--creamd); display:flex; align-items:center;">17 років дизайну + інженерна освіта КПІ + досвід систем оборонного сектору</div>
+  <div class="el" style="left:90px; top:326px; font-size:34px; color:var(--brass);"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="el" style="left:147px; top:318px; width:1062px; height:70px; font-size:26px; color:var(--creamd); display:flex; align-items:center;">Готовність до поліграфу та фонової перевірки</div>
+  <div class="el" style="left:90px; top:406px; font-size:34px; color:var(--brass);"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="el" style="left:147px; top:398px; width:1062px; height:70px; font-size:26px; color:var(--creamd); display:flex; align-items:center;">Досвід роботи з чутливою інформацією, режим секретності</div>
+  <div class="el" style="left:90px; top:485px; font-size:34px; color:var(--brass);"><i class="fa-solid fa-circle-check"></i></div>
+  <div class="el" style="left:147px; top:477px; width:1062px; height:70px; font-size:26px; color:var(--creamd); display:flex; align-items:center;">Швидко навчаюся, ініціативний, працюю в умовах стислих дедлайнів</div>
+
+  <div class="el" style="left:90px; top:582px; width:1100px; height:2px; background:var(--brass);"></div>
+  <div class="el" style="left:90px; top:602px; width:1100px; font-size:25px;"><b style="color:#fff;">Коломієць Роман</b>&nbsp;&nbsp;<span style="color:var(--dim); font-size:22px;">098 707-74-67&nbsp;&nbsp;·&nbsp;&nbsp;romankolomiets@gmail.com&nbsp;&nbsp;·&nbsp;&nbsp;Київ</span></div>
+  <div class="el" style="left:90px; top:653px; width:1100px; font-size:19px; font-style:italic; color:#8F947F;">Резюме створено виключно для МОУ · вакансія Дизайнер / Дата-аналітик</div>
+</section>
+
+</div></div>
+
+<div id="bar">
+  <button id="prev">◀ Назад</button>
+  <span id="counter">1 / 9</span>
+  <button id="next">Далі ▶</button>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let cur = 0;
+  function show(i){
+    cur = (i + slides.length) % slides.length;
+    slides.forEach((s,idx)=> s.classList.toggle('active', idx===cur));
+    document.getElementById('counter').textContent = (cur+1) + ' / ' + slides.length;
+  }
+  document.getElementById('prev').onclick = ()=> show(cur-1);
+  document.getElementById('next').onclick = ()=> show(cur+1);
+  document.addEventListener('keydown', e=>{
+    if(e.key==='ArrowRight' || e.key===' ' || e.key==='PageDown') show(cur+1);
+    if(e.key==='ArrowLeft' || e.key==='PageUp') show(cur-1);
+  });
+  // click to advance
+  document.getElementById('stage').addEventListener('click', ()=> show(cur+1));
+
+  // fit 1280×720 canvas into viewport
+  function fit(){
+    const availW = window.innerWidth - 40;
+    const availH = window.innerHeight - 104;
+    const k = Math.min(availW/1280, availH/720, 1.4);
+    document.getElementById('scaler').style.transform = 'scale(' + k + ')';
+  }
+  window.addEventListener('resize', fit);
+  fit();
+</script>
+</body>
+</html>
